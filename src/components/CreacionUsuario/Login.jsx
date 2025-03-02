@@ -54,7 +54,7 @@ function  Login (){
 
 
     return (
-       <div className="mt-60">
+       <div className="mt-50">
       <div className="contenedor_todo">
         <div className="caja__trasera">
           <div className="caja__trasera-login">
