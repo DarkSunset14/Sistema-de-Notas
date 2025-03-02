@@ -20,11 +20,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-     <SessionProvider>{children}</SessionProvider>
-      </body>
-    </html>
+    <body>
+      
+      <main className="mx-10 h-[calc(100vh-5rem)]">
+        <SessionProvider>{children}</SessionProvider>
+      </main>
+    </body>
+  </html>
   );
 }
