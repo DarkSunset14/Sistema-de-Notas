@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^5.22.0",
     "@prisma/extension-accelerate": "^1.2.2",
     "@react-pdf/renderer": "^4.2.2",
     "axios": "^1.8.1",
@@ -27,6 +26,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@prisma/client": "^6.4.1",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.0",

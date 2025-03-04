@@ -7,7 +7,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
- model usuarios {
-  cedula String @id 
- }
+model rol {
+  id      Int       @id
+  rol     String?
+  usuario usuario[]
+}
+
+model usuario {
+  id Int @id  @default(autoincrement())
+  cedula   String  @unique
+  apellido String?
+  id_Rol   Int?
+   created_at DateTime @db.Timestamptz(6)
+  nombre   String?
+  password String?
+  rol      rol?    @relation(fields: [id_Rol], references: [id])
+}

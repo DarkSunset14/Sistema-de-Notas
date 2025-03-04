@@ -19,7 +19,7 @@ function RegisterUser() {
 
   useEffect(() => {
     const fetchRol = async () => {
-      const response = await fetch("/api/auth/roles");
+      const response = await fetch("/api/auth/rol");
       const data = await response.json();
       setRoles(data);
       console.log(data); // Verifica que los roles se carguen correctamente
@@ -38,7 +38,7 @@ function RegisterUser() {
   const usuario = handleSubmit(async (data) => {
   
 
-    const res = await fetch("/api/auth/user", {
+    const res = await fetch("/api/auth/RegistroUsuario", {
       method: "POST",
       body: JSON.stringify({
         nombre: data.nombre,

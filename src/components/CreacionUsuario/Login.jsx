@@ -33,7 +33,7 @@ function  Login (){
       setError(null);
 
       //Obtener el rol del usuario de la base de datos
-      const userResponse = await fetch("/api/auth/user", {
+      const userResponse = await fetch("/api/auth/usuario", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
